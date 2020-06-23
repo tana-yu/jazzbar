@@ -1,0 +1,488 @@
+@charset "utf-8";
+
+/* ===== common ======================================================= */
+
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+a,p {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: '游明朝体+36ポかな','YuMincho +36p Kana','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+}
+
+h2{
+    font-family: 'Snell Roundhand',sans-serif;
+}
+
+/* ===== commonここまで ======================================================= */
+
+
+
+/* ===== header ======================================================= */
+
+header {
+    width: 100vw;
+    height: 95vh;
+    background-position:center center;
+    background-size: cover;
+    padding: 4vh 0 0 2vw;
+}
+
+nav {
+    width: 280px;
+    height: 360px;
+    background-color: #000;
+    opacity: 0.8;
+}
+
+nav h1 {
+    text-align: center;
+    padding: 2vh 2vh 4vh 2vh;
+}
+
+nav h1 img {
+    width: 220px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    color: #c9c9c9;
+    padding: 0 0 2.5vh 0;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* ===== headerここまで ======================================================= */
+
+
+/* ===== concept ======================================================= */
+
+#concept {
+    height: 55vh;
+    background-color: #0f0f0f;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#concept h2 {
+    font-size: 4em;
+    font-weight: 100;
+    color: #c9c9c9;
+    padding: 0 0 3.5vh 0;
+}
+
+.concept_p {
+    font-size: 1.4em;
+    line-height: 2.8em;
+    font-weight: 100;
+    color: #c9c9c9;
+}
+
+.concept_p2 {
+    display: none;
+}
+
+/* ===== conceptここまで ======================================================= */
+
+/* ===== schedule ======================================================= */
+
+#schedule {
+    background-color: #dedede;
+    text-align: center;
+    padding: 10vh 0;
+}
+
+#schedule h2 {
+    font-size: 4em;
+    font-weight: 100;
+    color: #0f0f0f;
+    padding: 0 0 8vh 0;
+}
+
+.member h3 {
+    font-size: 1.8em;
+    font-weight: 100;
+    color: #0f0f0f;
+    padding: 0 0 3.5vh 0;
+}
+
+.member {
+    margin: 0 0 8vh 0;
+}
+
+.member img {
+    width: 500px;
+}
+
+.member h4 {
+    font-size: 1.5em;
+    font-weight: 100;
+    color: #0f0f0f;
+    padding: 2vh 0 1.5vh 0;
+}
+
+.member p {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    font-weight: 100;
+    color: #0f0f0f;
+}
+
+.other_schedule {
+    color: #2b66ca;
+    font-size: 1em;
+    padding: 0 0 10vh 0;
+}
+
+/* ===== scheduleここまで ======================================================= */
+
+/* ===== menu ======================================================= */
+
+#menu {
+    background-color: #0f0f0f;
+    text-align: center;
+    padding: 10vh 0;
+}
+
+#menu h2 {
+    font-size: 4em;
+    font-weight: 100;
+    color: #c9c9c9;
+    padding: 0 0 8vh 0;
+}
+
+#menu h3 {
+    font-size: 1.8em;
+    font-weight: 100;
+    color: #c9c9c9;
+    padding: 0 0 3.5vh 0;
+}
+
+#menu img {
+    width: 500px;
+}
+
+#menu h4 {
+    font-size: 1.5em;
+    font-weight: 100;
+    color: #c9c9c9;
+    padding: 4vh 0 2vh 0;
+}
+
+#menu p {
+    font-size: 1.1em;
+    line-height: 1.7em;
+    color: #c9c9c9;
+    padding: 0 0 8vh 0;
+}
+
+.other_menu {
+    color: #2b66ca;
+    font-size: 1em;
+}
+
+/* ===== menuここまで ======================================================= */
+
+/* ===== access ======================================================= */
+
+#access {
+    background-color: #dedede;
+    text-align: center;
+    padding: 10vh 0;
+}
+
+#access h2 {
+    font-size: 4em;
+    font-weight: 100;
+    color: #0f0f0f;
+    padding: 0 0 8vh 0;
+}
+
+#access h3 {
+    font-size: 1.6em;
+    font-weight: 100;
+    color: #0f0f0f;
+    padding: 3vh 0 1.5vh 0;
+}
+
+iframe {
+    width: 500px;
+    height: 400px;
+}
+
+/* ===== accessここまで ======================================================= */
+
+
+footer {
+    background-color: #0f0f0f;
+    text-align: center;
+    padding: 2vh 0;
+}
+
+footer p {
+    color: #c9c9c9;
+    font-size: 14px;
+}
+
+@media screen and (max-width:1300px) {
+
+    .concept_p {
+        font-size: 1.1em;
+        line-height: 2.6em;
+    }
+
+}
+
+@media screen and (max-width:1000px) {
+
+    header {
+        height: 70vh;
+        padding: 0;
+    }
+
+    nav {
+        width: 100vw;
+        height: 6vh;
+        background-color: #000;
+        opacity: 0.8;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 3.5vw;
+    }
+    
+    nav h1 {
+        text-align: left;
+        padding: 0;
+    }
+    
+    nav h1 img {
+        width: 130px;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        display: flex;
+    }
+    
+    nav ul li {
+        color: #c9c9c9;
+        padding: 0 0 0 3vw;
+        text-align: center;
+        font-size: 1em;
+    }
+
+    #concept h2 {
+        font-size: 3em;
+    }
+
+    .concept_p {
+        display: none;
+    }
+    
+    .concept_p2 {
+        display: block;
+        font-size: 1.1em;
+        line-height: 2em;
+        font-weight: 100;
+        color: #c9c9c9;
+    }
+
+    #schedule h2 {
+        font-size: 3em;
+    }
+
+    #menu h2 {
+        font-size: 3em;
+    }
+
+    #access h2 {
+        font-size: 3em;
+    }
+
+}
+
+@media screen and (max-width:700px) {
+
+    .member h3 {
+        font-size: 1.5em;
+    }
+
+    .member h4 {
+        font-size: 1.2em;
+    }
+
+    .member p {
+        font-size: 0.8em;
+    }
+
+    .member img {
+        width: 90%;
+    }
+
+    #menu h2 {
+        font-size: 3em;
+    }
+
+    #menu h3 {
+        font-size: 1.5em;
+    }
+
+    #menu h4 {
+        font-size: 1.2em;
+    }
+
+    #menu p {
+        font-size: 0.8em;
+    }
+
+    #menu img {
+        width: 90%;
+    }
+
+    #access h2 {
+        font-size: 3em;
+    }
+
+    #access h3 {
+        font-size: 1.5em;
+    }
+
+    #access p {
+        font-size: 0.8em;
+    }
+
+    iframe {
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width:480px) {
+
+    header {
+        height: 45vh;
+    }
+
+    nav {
+        height: 7vh;
+    }
+
+    nav h1 img {
+        width: 90px;
+    }
+    
+    nav ul li {
+        font-size: 0.6em;
+    }
+
+    #concept {
+        height: 40vh;
+    }
+
+    #concept h2 {
+        font-size: 1.7em;
+        padding: 0 0 1.5vh 0;
+    }
+    
+    .concept_p2 {
+        font-size: 0.6em;
+        line-height: 2em;
+    }
+
+    #schedule {
+        padding: 5vh 0;
+    }
+
+    #schedule h2 {
+        font-size: 1.7em;
+        padding: 0 0 5vh 0;
+    }
+
+    .member h3 {
+        font-size: 1em;
+    }
+
+    .member h4 {
+        font-size: 0.8em;
+    }
+
+    .member p {
+        font-size: 0.6em;
+    }
+
+    .member img {
+        width: 90%;
+    }
+
+    .other_schedule {
+        font-size: 0.7em;
+    }
+
+    #menu {
+        padding: 5vh 0;
+    }
+
+    #menu h2 {
+        font-size: 1.7em;
+        padding: 0 0 5vh 0;
+    }
+
+    #menu h3 {
+        font-size: 1em;
+    }
+
+    #menu h4 {
+        font-size: 0.8em;
+    }
+
+    #menu p {
+        font-size: 0.6em;
+    }
+
+    #menu img {
+        width: 90%;
+    }
+
+    .other_menu {
+        font-size: 0.7em;
+    }
+
+    #access {
+        padding: 5vh 0;
+    }
+
+    #access h2 {
+        font-size: 1.7em;
+        padding: 0 0 5vh 0;
+    }
+
+    #access h3 {
+        font-size: 1em;
+    }
+
+    #access p {
+        font-size: 0.6em;
+    }
+
+    iframe {
+        width: 90%;
+        height: 300px;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+
+}
+

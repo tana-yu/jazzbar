@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Back and Forth Web site</title>
+    <link rel="stylesheet" type="text/css" href="css/robot.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <!-- ===== bg slider ======================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="js/jquery.bgswitcher.js"></script>
+
+    <script>
+      jQuery(function ($) {
+        $("header").bgSwitcher({
+          images: [
+            "images/main1.jpg",
+            "images/main2.jpg",
+            "images/main3.jpg",
+            "images/main4.jpg",
+          ], // 切り替える背景画像を指定します。
+        });
+      });
+    </script>
+    <!-- ===== bg sliderここまで ======================================== -->
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1><img src="images/logo_cute.png" alt="logo" /></h1>
+        <ul>
+          <li><a href="#concept">Concept</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#access">Access</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article id="concept">
+        <h2>Concept</h2>
+        <p class="concept_p">
+          店名の”Back and
+          forth”は、「前後に」や「行ったり来たり」という意味です。<br />
+          リズムを前後に揺らすグルーブを示す言葉としても響き、行ったり来たりはバーとしての気軽さを示す言葉ともとれます。<br />
+          毎晩、上質なJazzを聴けるMusic
+          barとして、皆様の生活の中に存在できれば幸いです。<br />
+        </p>
+
+        <p class="concept_p2">
+          店名の”Back and forth”は、<br />
+          「前後に」や「行ったり来たり」という意味です。<br />
+          リズムを前後に揺らすグルーブを<br />
+          示す言葉としても響き、<br />
+          行ったり来たりはバーとしての<br />
+          気軽さを示す言葉ともとれます。<br />
+          毎晩、上質なJazzを聴けるMusic barとして、<br />
+          皆様の生活の中に存在できれば幸いです。<br />
+        </p>
+      </article>
+
+      <article id="schedule">
+        <h2>Schedule</h2>
+        <div class="member">
+          <h3>Monthly pick up</h3>
+          <img src="images/schedule.png" alt="members" />
+          <h4>Charlie Rollins Quartet</h4>
+          <p>
+            Charlie Rollins(AS)　 Lily White(P)　 Keith Evans(B)　 Lewis
+            Blakey(D)<br />
+            Open 18:30　Start 19:30　Charge ￥5000
+          </p>
+        </div>
+
+        <div class="member">
+          <h3>Today's Live</h3>
+          <img src="images/schedule2.jpg" alt="members" />
+          <h4>Bill Kid Trio</h4>
+          <p>
+            Bill Kid(AS)　 東 正彦(B)　 中西 康孝(D)<br />
+            Open 18:30　Start 19:30　Charge ￥3000
+          </p>
+        </div>
+
+        <a class="other_schedule" href="#">その他のスケジュールはこちら</a>
+      </article>
+
+      <article id="menu">
+        <h2>Menu</h2>
+        <div class="menu_inner">
+          <h3>Monthly Coctail</h3>
+          <img src="images/martini.jpg" alt="martini" />
+          <h4>B＆F マティーニ</h4>
+          <p>
+            爽やかで透き通った青色に、フルーティーでもしっかりとした辛口。<br />本格的なマティーニをぜひお試しください。
+          </p>
+        </div>
+
+        <a class="other_menu" href="#">その他のメニューはこちら</a>
+      </article>
+
+      <article id="access">
+        <h2>Access</h2>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.6198229970582!2d135.4967582160881!3d34.664302980443935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e76d21f1d5e7%3A0x5d33877f634f8592!2z44CSNTU2LTAwMTEg5aSn6Ziq5bqc5aSn6Ziq5biC5rWq6YCf5Yy66Zuj5rOi5Lit77yR5LiB55uu77yR77yQ4oiS77yU!5e0!3m2!1sja!2sjp!4v1581786722926!5m2!1sja!2sjp"
+          frameborder="0"
+          style="border: 0;"
+          allowfullscreen=""
+        ></iframe>
+
+        <h3>Jazz Bar Back-n-Forth</h3>
+        <p>
+          大阪府大阪市難波中15−222−333　　Tel:010−1999−1999
+        </p>
+      </article>
+
+      <footer>
+        <p>© 2020 Back-n-Forth</p>
+      </footer>
+    </main>
+  </body>
+</html>
